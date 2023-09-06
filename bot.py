@@ -19,14 +19,14 @@ akbotz = Client('link shortener bot',
              bot_token=BOT_TOKEN,
              workers=100)
 
-print("Developer: @cyniteofficial , Join & Share Channel")
+print("Developer: @RETEAMADMINBOT")
 print("Bot is Started Now")
 
 @akbotz.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm Link Shortener bot. Just send me link and get short link, You can also send multiple links seperated by a space or enter.\n\n**Developer:** @AKBotZ")
+        "I'm Link Shortener bot. Just send me link and get short link, You can also send multiple links seperated by a space or enter.")
 
 
 @akbotz.on_message(filters.private & filters.text & filters.incoming)
